@@ -1,10 +1,8 @@
 import numpy as np
 import cv2
+# This function print the position on left mouse click and color on right mouse click 
 
 events = [i for i in dir(cv2) if 'EVENT' in  i]
-
-
-
 def click_event(event, x, y, flags, param):
     if event == cv2.EVENT_LBUTTONDOWN:
         print(x,', ' ,y)
