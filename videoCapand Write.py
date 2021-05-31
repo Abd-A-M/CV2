@@ -17,7 +17,7 @@ while True:
         font  = cv2.FONT_ITALIC
         text = "Width: " + str(cap.get(3)) + "|" + "Height : " + str(cap.get(4))
         time = "time: " + str(datetime.datetime.now()) + text
-        # write frames using object
+        # write frames using object "write" with time and dim.
         frame = cv2.putText(frame,time,(50,50),font,1,(25,123,255),1)
         write.write(frame)
         # gray = cv2.cvtColor(frame, cv2.COLOR_RGB2GRAY)
