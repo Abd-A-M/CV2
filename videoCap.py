@@ -18,3 +18,5 @@ while True:
             cv2.destroyAllWindows()
             break
 cap.release()
+write.release()
+cv2.destroyAllWindows()
