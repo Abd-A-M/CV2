@@ -4,6 +4,9 @@ cap = cv2.VideoCapture(0)
 #set video type
 res = cv2.VideoWriter_fourcc(*"XVID")
 write = cv2.VideoWriter("newVideo.avi", res,60.0,(640,480))
+# change the width and hight of frames
+cap.set(3, 400)
+cap.set(4, 400)
 while True:
     ret ,frame = cap.read()
     if ret == True:
